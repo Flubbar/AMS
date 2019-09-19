@@ -1,13 +1,20 @@
-﻿//2018038002이승연
+﻿/* **********************************************
+* 프로그래명 : Test2.cs
+• 작성자 : 2018038002 이승연
+• 작성일 : 2019.09.19
+*프로그램 설명 : 성적계산 프로그램 작성하기
+************************************************/
 using System;
 namespace App
 {
-    class Student
+    class Student   //Student 클래스를 만들어 개발하시오
     {
+        //Attribute (variable) : kor, math, eng
         public double kor;
         public double math;
         public double eng;
 
+        //Method : setScore(), getAverage()
         public void setScore()
         {
             Console.Write("국어성적 : ");
