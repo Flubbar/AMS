@@ -1,6 +1,13 @@
 {
+<<<<<<< Updated upstream
 	"process_id" : 14231,
 	"version" : "2018.4.12f1",
 	"app_path" : "/home/tw/2018.4.12f1/Editor/Unity",
 	"app_contents_path" : "/home/tw/2018.4.12f1/Editor/Data"
+=======
+	"process_id" : 7464,
+	"version" : "2019.2.12f1",
+	"app_path" : "C:/Program Files/Unity/Hub/Editor/2019.2.12f1/Editor/Unity.exe",
+	"app_contents_path" : "C:/Program Files/Unity/Hub/Editor/2019.2.12f1/Editor/Data"
+>>>>>>> Stashed changes
 }
