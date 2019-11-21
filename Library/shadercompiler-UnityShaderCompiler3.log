@@ -1,0 +1,41 @@
+Base path: /home/tw/2018.4.12f1/Editor/Data
+Cmd: initializeCompiler
+Cmd: compileComputeKernel
+  api=18 insize=2059 outsize=1233 ok=1
+Cmd: compileComputeKernel
+  api=15 insize=1176 outsize=1801 ok=1
+Cmd: compileComputeKernel
+  api=18 insize=3070 outsize=198945 ok=1
+Cmd: compileComputeKernel
+  api=18 insize=10881 outsize=40181 ok=1
+Cmd: compileComputeKernel
+  api=15 insize=10881 outsize=18161 ok=1
+Cmd: compileComputeKernel
+  api=15 insize=10881 outsize=21869 ok=1
+Cmd: compileComputeKernel
+  api=15 insize=4855 outsize=18545 ok=1
+Cmd: compileComputeKernel
+  api=18 insize=4855 outsize=24733 ok=1
+Cmd: compileComputeKernel
+  api=18 insize=3396 outsize=9925 ok=1
+Cmd: compileComputeKernel
+  api=15 insize=18299 outsize=16033 ok=1
+Cmd: compileComputeKernel
+  api=15 insize=18299 outsize=24521 ok=1
+Cmd: compileComputeKernel
+  api=18 insize=18299 outsize=32865 ok=1
+Cmd: compileComputeKernel
+  api=18 insize=18299 outsize=34697 ok=1
+Cmd: compileComputeKernel
+  api=18 insize=18299 outsize=57065 ok=1
+Cmd: compileComputeKernel
+  api=15 insize=1806 outsize=1925 ok=1
+Cmd: compileComputeKernel
+  api=18 insize=1454 outsize=6817 ok=1
+Cmd: compileComputeKernel
+  api=15 insize=2044 outsize=1869 ok=1
+Cmd: compileComputeKernel
+  api=18 insize=2044 outsize=4157 ok=1
+Unhandled exception: Protocol error - unexpected end of data (did the Editor crash?)
+
+Quitting shader compiler process
