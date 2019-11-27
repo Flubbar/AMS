@@ -12,7 +12,7 @@ public class KeyBindMenuScript : MonoBehaviour
 
     void Start()
     {
-        menuPanel = transform.Find("KeyBindPanel");
+        menuPanel = transform.Find("Panel");
         waitingForKey = false;
 
         for (int i = 0; i < menuPanel.childCount; i++)

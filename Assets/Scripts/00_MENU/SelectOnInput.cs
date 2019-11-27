@@ -4,11 +4,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using UnityEngine.Audio;
 
 [RequireComponent(typeof(Selectable))]
 public class SelectOnInput : MonoBehaviour, IPointerEnterHandler, IDeselectHandler
 {
-
     public EventSystem eventSystem;
     public GameObject selectedObject;
 
@@ -17,7 +17,6 @@ public class SelectOnInput : MonoBehaviour, IPointerEnterHandler, IDeselectHandl
     // Use this for initialization
     void Start()
     {
-
     }
 
     // Update is called once per frame
@@ -35,7 +34,7 @@ public class SelectOnInput : MonoBehaviour, IPointerEnterHandler, IDeselectHandl
         buttonSelected = false;
     }
 
-
+    // 마우스
     public void OnPointerEnter(PointerEventData eventData)
     {
         if (!EventSystem.current.alreadySelecting)
