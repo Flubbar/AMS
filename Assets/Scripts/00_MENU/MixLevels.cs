@@ -16,4 +16,8 @@ public class MixLevels : MonoBehaviour
     {
         masterMixer.SetFloat("musicVol", musicLvl);
     }
+    public void SetVocalLvl(float vocalLvl)
+    {
+        masterMixer.SetFloat("vocalPitch", vocalLvl);
+    }
 }
