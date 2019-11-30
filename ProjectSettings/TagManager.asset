@@ -6,6 +6,11 @@ TagManager:
   tags:
   - Ground
   - Grass
+  - Wood
+  - Stone
+  - Snow
+  - Ice
+  - Water
   layers:
   - Default
   - TransparentFX

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 96caa678b6bd969428cf086d90224d20
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - woodSound: {fileID: 8300000, guid: 50b1d29868fcdc74bbd90114b7328f03, type: 3}
+  - stoneSound: {fileID: 8300000, guid: 9bf4627c97d98c54fb5d75abaf0b4e10, type: 3}
+  - dirtSound: {fileID: 8300000, guid: 9bf4627c97d98c54fb5d75abaf0b4e10, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

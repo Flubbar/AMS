@@ -1,5 +1,18 @@
 ﻿using UnityEngine;
 
+/*
+
+* 프로그램명 :
+
+* 작성자 : (김민선, 김택원, 나선율, 이승연, 조수현)
+
+* 작성일 : 2019년 11월27일
+
+* 프로그램 설명 : 
+
+*/
+
+
 namespace UnityTemplateProjects
 {
     public class SimpleCameraController : MonoBehaviour

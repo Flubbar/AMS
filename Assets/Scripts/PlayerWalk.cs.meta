@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 1669d4fbcc8a04445b45da9e8f3b430b
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - controller: {instanceID: 0}
+  - audioSource: {instanceID: 0}
+  - grassSound: {fileID: 8300000, guid: 797da453001930d4abbf0f9db27b28b3, type: 3}
+  - stoneSound: {fileID: 8300000, guid: 622b441c834caed48b886136bee64944, type: 3}
+  - woodSound: {fileID: 8300000, guid: f234c5c9581cf1d4e9ce843db78ca7ea, type: 3}
+  - snowSound: {fileID: 8300000, guid: ed6aa77a8710baf48aa5056c9bb806fb, type: 3}
+  - iceSound: {fileID: 8300000, guid: 40b4c36f4f0cc5247a11a5856922a91f, type: 3}
+  - waterSound: {fileID: 8300000, guid: 2187b2582f3ee3f47a23f4c0339a8816, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

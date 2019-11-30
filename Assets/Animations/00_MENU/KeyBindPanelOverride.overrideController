@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: KeyBindPanelOverride
+  m_Controller: {fileID: 9100000, guid: 91e0db5e17205a440aec0de89a9e5662, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 2f985e65c4cd70a4bbc0c83932fb036b, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: df3704f8084b3a94ab5e883774727818, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 37cae400f384e7448b8b99720ea4ce8c, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: a36c871bd6a2ea8478e60e9294df031a, type: 2}

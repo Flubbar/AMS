@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: 88cda15ee6286ed4baa1f5ff004ab0d0
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - splash: {fileID: 8300000, guid: 3df44ada811f0b9468c6d73f5427c10e, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
