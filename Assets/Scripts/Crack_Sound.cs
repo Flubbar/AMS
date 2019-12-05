@@ -23,17 +23,23 @@ public class Crack_Sound : MonoBehaviour
     void Start()
     {
         musicPlayer = GetComponent<AudioSource>();
+        musicPlayer.clip = EffectMusic;
+        musicPlayer.Play();
+        musicPlayer.Pause();
     }
 
-    public static void playSound(AudioClip clip, AudioSource audioPlayer)
+    void OnTriggerEnter(Collider col)
     {
-        audioPlayer.clip = clip;
-        audioPlayer.Play();
+        if (col.tag == "Player")
+        {
+            musicPlayer.UnPause();
+        }
     }
-
-    void OnTriggerStay(Collider col)
+    void OnTriggerExit(Collider col)
     {
-        if(col.tag == "Player")
-            playSound(EffectMusic, musicPlayer);
+        if (col.tag == "Player")
+        {
+            musicPlayer.Pause();
+        }
     }
 }

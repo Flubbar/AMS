@@ -25,6 +25,7 @@ public class EyeOpen : MonoBehaviour
     {
         DontDestroyOnLoad(gameObject);
         image = GetComponent<Image>();
+        Cursor.visible = false;
     }
     private void FixedUpdate()
     {

@@ -22,6 +22,7 @@ public class RockPiece : MonoBehaviour
     public AudioClip goal;
     public float cooldown;
     public float limit = 180f;
+    bool finished = false;
     public GameManager gameManager;
     // Update is called once per frame
     private void Awake()
@@ -31,8 +32,9 @@ public class RockPiece : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "Player")
+        if(other.tag == "Player" && finished == false)
         {
+            finished = true;
             gameManager.CompleteLevel();
             source.PlayOneShot(goal);
         }

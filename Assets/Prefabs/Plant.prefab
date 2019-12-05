@@ -349,7 +349,7 @@ GameObject:
   - component: {fileID: 111288504566682133}
   - component: {fileID: 111288504566682132}
   - component: {fileID: 111288504566682135}
-  - component: {fileID: 111288504566682134}
+  - component: {fileID: 6940723133388891439}
   m_Layer: 0
   m_Name: Plant
   m_TagString: Untagged
@@ -419,7 +419,8 @@ AudioSource:
   m_GameObject: {fileID: 111288504680271143}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 0baeb9aabddee1141a4e0f3b95160518,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: 4d8b83577219430a599ef3fd475ebbe7, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.713
@@ -573,7 +574,7 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &111288504566682134
+--- !u!114 &6940723133388891439
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -582,12 +583,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 111288504680271143}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7ed729c43c48905c8a04c1bba8f3e83a, type: 3}
+  m_Script: {fileID: 11500000, guid: 404021949f89e5d4fb8d4af7b2f70082, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentDist: 0
   setDist: 5
-  coolTime: 5
-  setCoolTime: 5
+  coolTime: 0
+  setCoolTime: 3
   Seed: {fileID: 2983399893400643381, guid: 6ff4e4c34a34da6efb6a662961049dd1, type: 3}
   AttackPoint: {fileID: 111288504060186851}
   Player: {fileID: 0}

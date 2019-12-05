@@ -392,10 +392,40 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 111288504680271143, guid: 7fe9c5243c95b174a83feedcb4d9dacf,
+    - target: {fileID: 111288504566682132, guid: 7fe9c5243c95b174a83feedcb4d9dacf,
         type: 3}
-      propertyPath: m_Name
-      value: Plant (1)
+      propertyPath: m_Volume
+      value: 0.361
+      objectReference: {fileID: 0}
+    - target: {fileID: 111288504566682132, guid: 7fe9c5243c95b174a83feedcb4d9dacf,
+        type: 3}
+      propertyPath: Priority
+      value: 128
+      objectReference: {fileID: 0}
+    - target: {fileID: 111288504566682134, guid: 7fe9c5243c95b174a83feedcb4d9dacf,
+        type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 846660756}
+    - target: {fileID: 111288504566682134, guid: 7fe9c5243c95b174a83feedcb4d9dacf,
+        type: 3}
+      propertyPath: coolTime
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 111288504566682134, guid: 7fe9c5243c95b174a83feedcb4d9dacf,
+        type: 3}
+      propertyPath: setCoolTime
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 111288504566682134, guid: 7fe9c5243c95b174a83feedcb4d9dacf,
+        type: 3}
+      propertyPath: setDist
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 111288504566682134, guid: 7fe9c5243c95b174a83feedcb4d9dacf,
+        type: 3}
+      propertyPath: isHit
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 111288504680036615, guid: 7fe9c5243c95b174a83feedcb4d9dacf,
         type: 3}
@@ -467,36 +497,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.21496001
       objectReference: {fileID: 0}
-    - target: {fileID: 111288504566682132, guid: 7fe9c5243c95b174a83feedcb4d9dacf,
+    - target: {fileID: 111288504680271143, guid: 7fe9c5243c95b174a83feedcb4d9dacf,
         type: 3}
-      propertyPath: m_Volume
-      value: 0.361
+      propertyPath: m_Name
+      value: Plant (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 111288504566682132, guid: 7fe9c5243c95b174a83feedcb4d9dacf,
-        type: 3}
-      propertyPath: Priority
-      value: 128
-      objectReference: {fileID: 0}
-    - target: {fileID: 111288504566682134, guid: 7fe9c5243c95b174a83feedcb4d9dacf,
+    - target: {fileID: 6940723133388891439, guid: 7fe9c5243c95b174a83feedcb4d9dacf,
         type: 3}
       propertyPath: Player
       value: 
       objectReference: {fileID: 846660756}
-    - target: {fileID: 111288504566682134, guid: 7fe9c5243c95b174a83feedcb4d9dacf,
-        type: 3}
-      propertyPath: coolTime
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 111288504566682134, guid: 7fe9c5243c95b174a83feedcb4d9dacf,
-        type: 3}
-      propertyPath: setCoolTime
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 111288504566682134, guid: 7fe9c5243c95b174a83feedcb4d9dacf,
-        type: 3}
-      propertyPath: setDist
-      value: 5
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7fe9c5243c95b174a83feedcb4d9dacf, type: 3}
 --- !u!43 &273809108
@@ -956,10 +966,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 111288504680271143, guid: 7fe9c5243c95b174a83feedcb4d9dacf,
+    - target: {fileID: 111288504566682134, guid: 7fe9c5243c95b174a83feedcb4d9dacf,
         type: 3}
-      propertyPath: m_Name
-      value: Plant (3)
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 846660756}
+    - target: {fileID: 111288504566682134, guid: 7fe9c5243c95b174a83feedcb4d9dacf,
+        type: 3}
+      propertyPath: isHit
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 111288504680036615, guid: 7fe9c5243c95b174a83feedcb4d9dacf,
         type: 3}
@@ -1016,7 +1031,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 111288504566682134, guid: 7fe9c5243c95b174a83feedcb4d9dacf,
+    - target: {fileID: 111288504680271143, guid: 7fe9c5243c95b174a83feedcb4d9dacf,
+        type: 3}
+      propertyPath: m_Name
+      value: Plant (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6940723133388891439, guid: 7fe9c5243c95b174a83feedcb4d9dacf,
         type: 3}
       propertyPath: Player
       value: 
@@ -1884,11 +1904,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 7333800196562084699, guid: fe8deaea74f51114db2ad60c8d5fad3d,
-        type: 3}
-      propertyPath: m_Name
-      value: First Person Player
-      objectReference: {fileID: 0}
+    - target: {fileID: 894142197, guid: fe8deaea74f51114db2ad60c8d5fad3d, type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 16496643}
     - target: {fileID: 7333800196562084695, guid: fe8deaea74f51114db2ad60c8d5fad3d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1944,10 +1963,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 894142197, guid: fe8deaea74f51114db2ad60c8d5fad3d, type: 3}
-      propertyPath: gameManager
-      value: 
-      objectReference: {fileID: 16496643}
+    - target: {fileID: 7333800196562084699, guid: fe8deaea74f51114db2ad60c8d5fad3d,
+        type: 3}
+      propertyPath: m_Name
+      value: First Person Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe8deaea74f51114db2ad60c8d5fad3d, type: 3}
 --- !u!1001 &722341024
@@ -1957,10 +1977,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 111288504680271143, guid: 7fe9c5243c95b174a83feedcb4d9dacf,
+    - target: {fileID: 111288504566682134, guid: 7fe9c5243c95b174a83feedcb4d9dacf,
         type: 3}
-      propertyPath: m_Name
-      value: Plant (7)
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 846660756}
+    - target: {fileID: 111288504566682134, guid: 7fe9c5243c95b174a83feedcb4d9dacf,
+        type: 3}
+      propertyPath: isHit
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 111288504680036615, guid: 7fe9c5243c95b174a83feedcb4d9dacf,
         type: 3}
@@ -2017,7 +2042,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 111288504566682134, guid: 7fe9c5243c95b174a83feedcb4d9dacf,
+    - target: {fileID: 111288504680271143, guid: 7fe9c5243c95b174a83feedcb4d9dacf,
+        type: 3}
+      propertyPath: m_Name
+      value: Plant (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6940723133388891439, guid: 7fe9c5243c95b174a83feedcb4d9dacf,
         type: 3}
       propertyPath: Player
       value: 
@@ -2031,10 +2061,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 111288504680271143, guid: 7fe9c5243c95b174a83feedcb4d9dacf,
+    - target: {fileID: 111288504566682134, guid: 7fe9c5243c95b174a83feedcb4d9dacf,
         type: 3}
-      propertyPath: m_Name
-      value: Plant (6)
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 846660756}
+    - target: {fileID: 111288504566682134, guid: 7fe9c5243c95b174a83feedcb4d9dacf,
+        type: 3}
+      propertyPath: setDist
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 111288504566682134, guid: 7fe9c5243c95b174a83feedcb4d9dacf,
+        type: 3}
+      propertyPath: isHit
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 111288504680036615, guid: 7fe9c5243c95b174a83feedcb4d9dacf,
         type: 3}
@@ -2091,16 +2131,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 111288504566682134, guid: 7fe9c5243c95b174a83feedcb4d9dacf,
+    - target: {fileID: 111288504680271143, guid: 7fe9c5243c95b174a83feedcb4d9dacf,
+        type: 3}
+      propertyPath: m_Name
+      value: Plant (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6940723133388891439, guid: 7fe9c5243c95b174a83feedcb4d9dacf,
         type: 3}
       propertyPath: Player
       value: 
       objectReference: {fileID: 846660756}
-    - target: {fileID: 111288504566682134, guid: 7fe9c5243c95b174a83feedcb4d9dacf,
-        type: 3}
-      propertyPath: setDist
-      value: 5
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7fe9c5243c95b174a83feedcb4d9dacf, type: 3}
 --- !u!1001 &776141762
@@ -5171,10 +5211,40 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 111288504680271143, guid: 7fe9c5243c95b174a83feedcb4d9dacf,
+    - target: {fileID: 111288504566682132, guid: 7fe9c5243c95b174a83feedcb4d9dacf,
         type: 3}
-      propertyPath: m_Name
-      value: Plant (4)
+      propertyPath: m_Volume
+      value: 0.361
+      objectReference: {fileID: 0}
+    - target: {fileID: 111288504566682132, guid: 7fe9c5243c95b174a83feedcb4d9dacf,
+        type: 3}
+      propertyPath: Priority
+      value: 128
+      objectReference: {fileID: 0}
+    - target: {fileID: 111288504566682134, guid: 7fe9c5243c95b174a83feedcb4d9dacf,
+        type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 846660756}
+    - target: {fileID: 111288504566682134, guid: 7fe9c5243c95b174a83feedcb4d9dacf,
+        type: 3}
+      propertyPath: coolTime
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 111288504566682134, guid: 7fe9c5243c95b174a83feedcb4d9dacf,
+        type: 3}
+      propertyPath: setCoolTime
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 111288504566682134, guid: 7fe9c5243c95b174a83feedcb4d9dacf,
+        type: 3}
+      propertyPath: setDist
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 111288504566682134, guid: 7fe9c5243c95b174a83feedcb4d9dacf,
+        type: 3}
+      propertyPath: isHit
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 111288504680036615, guid: 7fe9c5243c95b174a83feedcb4d9dacf,
         type: 3}
@@ -5246,36 +5316,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.21496001
       objectReference: {fileID: 0}
-    - target: {fileID: 111288504566682132, guid: 7fe9c5243c95b174a83feedcb4d9dacf,
+    - target: {fileID: 111288504680271143, guid: 7fe9c5243c95b174a83feedcb4d9dacf,
         type: 3}
-      propertyPath: m_Volume
-      value: 0.361
+      propertyPath: m_Name
+      value: Plant (4)
       objectReference: {fileID: 0}
-    - target: {fileID: 111288504566682132, guid: 7fe9c5243c95b174a83feedcb4d9dacf,
-        type: 3}
-      propertyPath: Priority
-      value: 128
-      objectReference: {fileID: 0}
-    - target: {fileID: 111288504566682134, guid: 7fe9c5243c95b174a83feedcb4d9dacf,
+    - target: {fileID: 6940723133388891439, guid: 7fe9c5243c95b174a83feedcb4d9dacf,
         type: 3}
       propertyPath: Player
       value: 
       objectReference: {fileID: 846660756}
-    - target: {fileID: 111288504566682134, guid: 7fe9c5243c95b174a83feedcb4d9dacf,
-        type: 3}
-      propertyPath: coolTime
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 111288504566682134, guid: 7fe9c5243c95b174a83feedcb4d9dacf,
-        type: 3}
-      propertyPath: setCoolTime
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 111288504566682134, guid: 7fe9c5243c95b174a83feedcb4d9dacf,
-        type: 3}
-      propertyPath: setDist
-      value: 5
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7fe9c5243c95b174a83feedcb4d9dacf, type: 3}
 --- !u!1 &1117713625
@@ -5872,7 +5922,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh54960
+  m_Name: pb_Mesh61564
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -6093,10 +6143,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 111288504680271143, guid: 7fe9c5243c95b174a83feedcb4d9dacf,
+    - target: {fileID: 111288504566682134, guid: 7fe9c5243c95b174a83feedcb4d9dacf,
         type: 3}
-      propertyPath: m_Name
-      value: Plant
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 846660756}
+    - target: {fileID: 111288504566682134, guid: 7fe9c5243c95b174a83feedcb4d9dacf,
+        type: 3}
+      propertyPath: isHit
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 111288504680036615, guid: 7fe9c5243c95b174a83feedcb4d9dacf,
         type: 3}
@@ -6153,7 +6208,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 111288504566682134, guid: 7fe9c5243c95b174a83feedcb4d9dacf,
+    - target: {fileID: 111288504680271143, guid: 7fe9c5243c95b174a83feedcb4d9dacf,
+        type: 3}
+      propertyPath: m_Name
+      value: Plant
+      objectReference: {fileID: 0}
+    - target: {fileID: 6940723133388891439, guid: 7fe9c5243c95b174a83feedcb4d9dacf,
         type: 3}
       propertyPath: Player
       value: 
@@ -7324,11 +7384,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3088976471213353995, guid: 7a03a4936ea218b4ba614d4f9f4c2231,
+    - target: {fileID: 3088976471213353989, guid: 7a03a4936ea218b4ba614d4f9f4c2231,
         type: 3}
-      propertyPath: m_Name
-      value: Stone Piece
-      objectReference: {fileID: 0}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 16496643}
     - target: {fileID: 3088976471213353990, guid: 7a03a4936ea218b4ba614d4f9f4c2231,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7394,11 +7454,11 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 291173656}
-    - target: {fileID: 3088976471213353989, guid: 7a03a4936ea218b4ba614d4f9f4c2231,
+    - target: {fileID: 3088976471213353995, guid: 7a03a4936ea218b4ba614d4f9f4c2231,
         type: 3}
-      propertyPath: gameManager
-      value: 
-      objectReference: {fileID: 16496643}
+      propertyPath: m_Name
+      value: Stone Piece
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a03a4936ea218b4ba614d4f9f4c2231, type: 3}
 --- !u!1 &1918933764
@@ -7491,11 +7551,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 111288504680271143, guid: 7fe9c5243c95b174a83feedcb4d9dacf,
-        type: 3}
-      propertyPath: m_Name
-      value: Plant (5)
-      objectReference: {fileID: 0}
     - target: {fileID: 111288504680036615, guid: 7fe9c5243c95b174a83feedcb4d9dacf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7551,16 +7606,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 111288504566682134, guid: 7fe9c5243c95b174a83feedcb4d9dacf,
+    - target: {fileID: 111288504680271143, guid: 7fe9c5243c95b174a83feedcb4d9dacf,
+        type: 3}
+      propertyPath: m_Name
+      value: Plant (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6940723133388891439, guid: 7fe9c5243c95b174a83feedcb4d9dacf,
         type: 3}
       propertyPath: Player
       value: 
       objectReference: {fileID: 846660756}
-    - target: {fileID: 111288504566682134, guid: 7fe9c5243c95b174a83feedcb4d9dacf,
-        type: 3}
-      propertyPath: setDist
-      value: 5
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7fe9c5243c95b174a83feedcb4d9dacf, type: 3}
 --- !u!1 &1969595612

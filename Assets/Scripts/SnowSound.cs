@@ -18,55 +18,70 @@ using UnityEngine;
 public class SnowSound : MonoBehaviour
 {
 
-    public AudioSource audio;
+    public AudioSource source;
     public AudioClip snowBeforeFlump;
     public AudioClip snowFlump;
+    public AudioClip damage;
+    public int radius = 5;
 
     public GameObject Snow_;
     public GameObject Player_;
-    public Rigidbody rigidbody;
+    public Rigidbody rb;
     float forceGravity = 9.8f;
 
     int i = 0;
-    bool trigger = true;
+    bool trigger = false;
+    bool damaged = false;
 
     // Start is called before the first frame update
     void Start()
     {
-        audio = GameObject.Find("SnowFlump").GetComponent<AudioSource>();
-        audio.volume = 1.0f;
-        Snow_ = GameObject.Find("SnowOnTree");
-        rigidbody = this.GetComponent<Rigidbody>();
-        Player_ = GameObject.Find("Player");
+        source = GetComponent<AudioSource>();
+        source.volume = 1.0f;
+        Snow_ = gameObject;
+        rb = this.GetComponent<Rigidbody>();
+        Player_ = GameObject.Find("First Person Player");
     }
 
     // Update is called once per frame
     void Update()
     {
-        /*
-        if (Vector3.Distance(Player_.transform.position, this.transform.position) < 2)
+
+        if (Vector3.Distance(Player_.transform.position, this.transform.position) < radius)
         {
-            bool trigger = true;
-        }*/
+            trigger = true;
+        }
         
-        if (audio.isPlaying == false && i == 0/*&&trigger == true*/)
+        if (source.isPlaying == false && i == 0 && trigger == true)
         {
             Debug.Log(" snowBeforeFlump ");
-            audio.clip = snowBeforeFlump;
-            audio.Play();
+            source.clip = snowBeforeFlump;
+            source.Play();
             Debug.Log(" i++ ");
             i++;
         }
-        if (audio.isPlaying == false && i == 1/*&&trigger == true*/)
+        if (source.isPlaying == false && i == 1 && trigger == true )
         {
             Debug.Log(" snowFlump ");
-            audio.clip = snowFlump;
-            audio.Play();
-            rigidbody.useGravity = true;
+            source.clip = snowFlump;
+            source.Play();
+            rb.useGravity = true;
             i++;
         }
-        if (audio.isPlaying == false && i == 2/*&&trigger == true*/)
+        if (source.isPlaying == false && i == 2 && trigger == true)
         {
+            Destroy(gameObject, 3);
+        }
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.tag == "Player" && damaged == false)
+        {
+            damaged = true;
+            source.volume = 0.3f;
+            source.pitch = 1.5f;
+            source.PlayOneShot(damage);
+            other.gameObject.GetComponent<PlayerHealth>().getDamage(1);
         }
     }
 }

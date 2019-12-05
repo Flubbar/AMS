@@ -42,7 +42,7 @@ public class PlayerWalk : MonoBehaviour
             velocity = controller.velocity.magnitude;
             hit = new RaycastHit();
             string groundTag;
-            if (controller.isGrounded == true && velocity > 2f)
+            if (controller.isGrounded == true && velocity > 2f && GetComponent<PlayerHealth>().hp > 0)
             {
                 if (Physics.Raycast(transform.position, Vector3.down, out hit))
                 {
@@ -84,7 +84,7 @@ public class PlayerWalk : MonoBehaviour
                     }
                 }
                 audioSource.PlayOneShot(audioSource.clip);
-                yield return new WaitForSeconds(0.7f);
+                yield return new WaitForSeconds(0.6f);
             }
             else
             {

@@ -228,7 +228,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh108920
+  m_Name: pb_Mesh52838
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -926,6 +926,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Duck (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8310268651930324758, guid: 6b3c052bfd2ec0340ae613e87d5fffec,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8310268651929867124, guid: 6b3c052bfd2ec0340ae613e87d5fffec,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -995,11 +1000,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.35028002
-      objectReference: {fileID: 0}
-    - target: {fileID: 8310268651930324758, guid: 6b3c052bfd2ec0340ae613e87d5fffec,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8310268651930324745, guid: 6b3c052bfd2ec0340ae613e87d5fffec,
         type: 3}
@@ -4424,7 +4424,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_IsSelectable: 1
-  m_SelectedFaces: 60000000
+  m_SelectedFaces: 6000000054000000
   m_SelectedEdges:
   - a: 384
     b: 385
@@ -4434,7 +4434,15 @@ MonoBehaviour:
     b: 384
   - a: 386
     b: 387
-  m_SelectedVertices: 80010000810100008201000083010000
+  - a: 336
+    b: 337
+  - a: 337
+    b: 338
+  - a: 339
+    b: 336
+  - a: 338
+    b: 339
+  m_SelectedVertices: 8001000081010000820100008301000050010000510100005201000053010000
 --- !u!23 &958109980
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5624,6 +5632,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Duck (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8310268651930324758, guid: 6b3c052bfd2ec0340ae613e87d5fffec,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8310268651929867124, guid: 6b3c052bfd2ec0340ae613e87d5fffec,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5693,11 +5706,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.35028002
-      objectReference: {fileID: 0}
-    - target: {fileID: 8310268651930324758, guid: 6b3c052bfd2ec0340ae613e87d5fffec,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8310268651930324745, guid: 6b3c052bfd2ec0340ae613e87d5fffec,
         type: 3}

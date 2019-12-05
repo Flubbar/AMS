@@ -17,10 +17,10 @@ using UnityEngine;
 
 public class EnemyPlant : MonoBehaviour
 {
-    float currentDist;
-    public float setDist = 10.0f;
+    public float currentDist;
+    public float setDist = 5.0f;
     public float coolTime;
-    public float setCoolTime = 10.0f;
+    public float setCoolTime = 3.0f;
     public GameObject Seed;
     public Transform AttackPoint;
     public GameObject Player;
@@ -28,7 +28,6 @@ public class EnemyPlant : MonoBehaviour
     private AudioSource plantAudio;
     public AudioClip attackSound;
     bool isSearch = false;
-    bool isHit = false;
 
 
 
@@ -42,35 +41,33 @@ public class EnemyPlant : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (isSearch && Vector3.Distance(_target.position, transform.position) < setDist)
-            {
-                Attack();
-            }
+        if (isSearch)
+        {
+            Attack();
+        }
+        DitectingPlayer();
     }
 
-    private void OnDrawGizmos() {
-        float maxDistance = 100f;
-        RaycastHit hit;
-        isHit = Physics.Raycast(transform.position, transform.forward, out hit, maxDistance);
-        Gizmos.color = Color.red;
-        transform.LookAt(_target);
-        if(hit.collider.tag == "Player"){
-            Gizmos.color = Color.green;
-            Gizmos.DrawRay(transform.position, transform.forward * hit.distance);
+    private void DitectingPlayer()
+    {
+        currentDist = Vector3.Distance(transform.position, Player.transform.position);
+        if (currentDist < setDist)
+        {
+            transform.LookAt(_target);
             isSearch = true;
         }
-        else{
-            Gizmos.DrawRay(transform.position, transform.forward * hit.distance);
+        else
+        {
             isSearch = false;
         }
     }
     void Attack()
     {
         coolTime -= 0.1f;
-        if(coolTime <= 0)
+        if (coolTime <= 0)
         {
             plantAudio.PlayOneShot(attackSound);
-            Instantiate (Seed, AttackPoint.position, transform.rotation);
+            Instantiate(Seed, AttackPoint.position, transform.rotation);
             coolTime = setCoolTime;
         }
     }

@@ -17,6 +17,8 @@ using UnityEngine;
 
 public class WaterSplash : MonoBehaviour
 {
+
+    bool pool = false;
     AudioSource audioSource;
     public AudioClip splash;
     public AudioClip bubble;
@@ -29,8 +31,9 @@ public class WaterSplash : MonoBehaviour
             audioSource.pitch = 0.5f + Random.Range(0,1f);
             audioSource.PlayOneShot(splash);
         }
-        if (other.tag == "Player")
+        if (other.tag == "Player" && pool == false)
         {
+            pool = true;
             audioSource = other.GetComponent<AudioSource>();
             audioSource.pitch = 1.0f;
             audioSource.PlayOneShot(splash);

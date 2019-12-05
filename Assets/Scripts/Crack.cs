@@ -22,6 +22,7 @@ public class Crack : MonoBehaviour
     public float Drag = 3;
     public AudioSource musicPlayer;
     public AudioClip EffectMusic;
+    bool broke = false;
 
     void Start()
     {
@@ -47,14 +48,15 @@ public class Crack : MonoBehaviour
 
     void OnTriggerStay(Collider col)
     {
-        if (col.tag == "Player")
+        if (col.tag == "Player" && broke == false)
         {
+            broke = true;
             colliders = gameObject.GetComponentsInChildren<Collider>();
             foreach (Collider item in colliders)
             {
                 item.attachedRigidbody.constraints = (RigidbodyConstraints)0;
                 playSound(EffectMusic, musicPlayer);
-                Destroy(gameObject, 2);
+                Destroy(gameObject, 4);
             }
         }
     }

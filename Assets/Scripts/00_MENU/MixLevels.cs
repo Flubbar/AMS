@@ -19,6 +19,12 @@ using UnityEngine.Audio;
 
 public class MixLevels : MonoBehaviour
 {
+    private void Awake()
+    {
+        AudioListener.volume = 1.0f;
+        Cursor.visible = true;
+    }
+
     public AudioMixer masterMixer;
 
     public void SetMasterLvl(Slider vol)
